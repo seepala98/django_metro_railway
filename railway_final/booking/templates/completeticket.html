@@ -1,0 +1,21 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+<h1>booking confirmed</h1>
+  <div class="container">
+    <h1 style="color: blue">Ticket details</h1>
+    <h4>Source:{{source}}</h4>
+    <h4>Destination:{{dest}}</h4>
+    <h4>fare:{{fare}}</h4>
+<h1 style="color:blue">Passenger details</h1>
+
+
+    <h4>Firstname:{{trainsdet.first_name}}</h4>
+    <h4>Lastname:{{trainsdet.last_name}}</h4>
+    <h4>Gender:{{trainsdet.gender}}</h4>
+    <h4>Train:{{trainsdet.train}}</h4>
+
+  </div>
+
+{% endblock %}

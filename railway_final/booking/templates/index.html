@@ -1,0 +1,62 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+
+<!-- <h1 style="color:blue">Railway Ticketing System</h1>
+ -->
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<section id="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 ">
+      <form action="{% url 'booking:search' %}" class="form-inline ">
+        <!-- <fieldset class="form-group">
+          <input type="text" name="source" class="form-control" placeholder="Enter source" required>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <input type="text" name="destination" class="form-control" placeholder="Enter destination" required>
+        </fieldset> -->
+        
+        <select name="source"  style="width:259px;height: 30px;">
+  <option value="0">Select Source</option>
+  <option value="MAJESTIC">Majestic</option>
+  <option value="YESHWANTHPURA">Yeshwanthpura</option>
+  <option value="INDRANAGAR">IndraNagar</option>
+  <option value="JPNAGAR">JPNagar</option>
+  <option value="MGRoad">MGRoad</option>
+ </select>
+       <select name="destination"  style="width:259px; height: 30px;">
+  <option value="0">Select Destination</option>
+  <option value="MAJESTIC">Majestic</option>
+  <option value="YESHWANTHPURA">Yeshwanthpura</option>
+  <option value="INDRANAGAR">IndraNagar</option>
+  <option value="JPNAGAR">JPNagar</option>
+  <option value="MGROAD">MGRoad</option>
+ </select>
+ <fieldset class="form-group">
+          <input type="date" name="date" class="form-control" min="2017-1-06" required>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+</section>
+
+{% endblock %}
